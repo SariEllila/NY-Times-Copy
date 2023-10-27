@@ -261,7 +261,7 @@ justify-content: end;
   .main-articles {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(8 1fr);
+    grid-template-rows: auto 1fr;
     padding: 1% 0;
     border-top: 1px solid black;
     margin-top: 0.15vw;
@@ -301,10 +301,11 @@ justify-content: end;
 }
 
 .img-tag-2 {
+  display: flex;
+  justify-content: end;
     color: grey;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.7vw;
-    margin: 1% 0% 0% 70%; 
 }
 
 .sub-titles {
@@ -321,7 +322,7 @@ justify-content: end;
 #live {
     color: red;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 #live-bolded {
@@ -425,10 +426,12 @@ justify-content: end;
 }
 
 .img-tag {
+  display:flex;
+  justify-content: end;
     color: grey;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 0.5vw;
-    margin: 1% 0% 5% 50%; 
+    font-size: 0.7vw;
+    margin-bottom: 3%;
 }
 
 .side-item-2 {
@@ -457,6 +460,88 @@ justify-content: end;
     color: grey;  
     padding: 2% 0;
 }
+
+
+/* LeftArticle-2 */
+
+.left-article-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4 1fr;
+}
+
+.article-2-nav {
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: start;
+  padding: 1.5% 0 3% 0;
+  border-top: solid 0.7px rgb(43, 43, 43);
+  width: 98%
+}
+
+.article-2-nav p {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.8vw;
+}
+
+.suspect-eludes {
+  margin: 5% 0;
+}
+
+#shootings-bolded {
+  font-weight: bold;
+}
+
+.what-we-know {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-top: 0.5px solid var(--border-light);
+  padding: 4% 0;
+  width: 90%;
+}
+
+.img-tag-3 {
+  display:flex;
+  justify-content: end;
+  color: grey;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.7vw;
+}
+
+.article-2-img {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  width: 90%;
+}
+
+.item {
+  margin-right: 1.2%;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.article-2-bottom {
+  display: grid;
+}
+
+.articles-2-bottom-items {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
 
 
 
